@@ -1,14 +1,6 @@
-# TypeScript Jest boilerplate
+# Ohce Kata
 
-This boilerplate uses TypeScript and Jest as testing framework.
-Test files should are picked based on their name, here's a few examples that will get picked up by Jest:
-
-- `MyClass.test.ts`
-- `MyJavaScriptModule.test.js`
-- `MyComponent.test.tsx`
-- `SubFolder/MyClass.test.ts`
-
-You can customize the regexp and jest configuration by editing the `package.json` file.
+https://kata-log.rocks/ohce-kata
 
 ## Installing dependencies
 
@@ -49,3 +41,4 @@ yarn test:changed
 # Run tests for CI environment (optimized for TravisCI)
 yarn test:ci
 ```
+
