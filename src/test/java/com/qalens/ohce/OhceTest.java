@@ -19,13 +19,22 @@ public class OhceTest {
         ois = System.in;
         System.setOut(new PrintStream(baos));
     }
+
+    /**
+     * $ ohce Pedro
+     * ¡Buenos días Pedro!
+     * $ Stop!
+     * Adios Pedro
+     */
     @Test
     public void shouldGreetAndStop(){
         System.setIn(new ByteArrayInputStream("Stop!".getBytes(StandardCharsets.UTF_8)));
-        String[] args = {"Atmaram"};
+        String[] args = {"Pedro"};
         Ohce.main(args);
-        Assertions.assertEquals("¡Buenos días Pedro!\nAdios Atmaram\n",new String(baos.toByteArray()));
+        Assertions.assertEquals("¡Buenos días Pedro!\nAdios Pedro\n",new String(baos.toByteArray()));
     }
+
+
     @AfterEach
     public void resetIO(){
         System.setOut(oos);
